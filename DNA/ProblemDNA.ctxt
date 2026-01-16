@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=ProblemDNA
+comment0.text=\n\ Write\ a\ description\ of\ class\ ProblemDNA\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=void\ main()
+comment2.params=counts
+comment2.target=java.lang.String\ formatData(int[])
+comment3.params=dnaString
+comment3.target=int[]\ nucleotideCounts(java.lang.String)
+numComments=4
