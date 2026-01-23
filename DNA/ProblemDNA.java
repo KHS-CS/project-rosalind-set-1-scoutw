@@ -8,12 +8,10 @@
 public class ProblemDNA
 {
     public static void main() {
-        // replace this string with the one from Project Rosalind
-        final String data = "AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC";
-        final int[] exampleExpectedCounts = new int[]{20,12,17,21};
+            final String data = "AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC";
+            final int[] exampleExpectedCounts = new int[]{20,12,17,21};
+            
         int[] output = nucleotideCounts(data);
-        // you can copy and paste from the terminal window into 
-        //   Project Rosalind to check your answer
         System.out.println(formatData(output));
     }
     
@@ -32,6 +30,17 @@ public class ProblemDNA
     //   array of how many times each letter occurs in the 
     //   string. Ideally in A C G T order. 
     private static int[] nucleotideCounts(String dnaString) {
-        return new int[]{20,12,17,21};
+        int a=0, c=0, g=0, t=0;
+        
+        for (int i = 0; i < dnaString.length();i++) {
+            char nucleotide = dnaString.charAt (i);
+            if (nucleotide == 'A') a++;
+            else if(nucleotide == 'C') c++;
+            else if(nucleotide == 'G') g++;
+            else if(nucleotide == 'T') t++;
+            
+            
+        }
+        return new int[] {a,c,g,t}; 
     }
 }
